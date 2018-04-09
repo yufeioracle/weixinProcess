@@ -1,0 +1,93 @@
+/**index.wxss**/
+@import "post-template/post-item-template.wxss";
+page{
+  background-color: white;
+}
+.container {
+  margin-left: 11%;
+  width: 80%;
+  position: relative;
+}
+.img{
+  text-align: center;
+  margin-top: 80rpx;
+}
+.headImg{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.title {
+  text-align: center;
+  margin-top: 79rpx;
+}
+
+.regist {
+  font-size: 44rpx;
+}
+
+.login {
+  position: absolute;
+  right: 0%;
+  color: #00b487;
+}
+
+.telephone {
+  display: flex;
+  margin-top: 122rpx;
+}
+
+.area {
+  height: 80rpx;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.tlephoneTxt {
+  height: 80rpx;
+  border-bottom: 1px solid #c1c1c1;
+  position: absolute;
+  right: 0;
+  width: 80%;
+}
+
+#txtTel {
+  color: #b9b5b5;
+}
+
+.code {
+  display: flex;
+  margin-top: 80rpx;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.codeTxt, .getCode {
+  padding-bottom: 25rpx;
+}
+
+.getCode {
+  position: absolute;
+  right: 0%;
+}
+
+.codeTxt {
+  color: #b9b5b5;
+}
+
+.registBtn {
+  margin-top: 80rpx;
+  background-color: #00b487;
+  width: 100%;
+  padding: 10rpx 0;
+}
+
+.registBtnContent {
+  color: white;
+  line-height: 206%;
+  text-align: center;
+}
+
+.tips {
+  font-size: 28rpx;
+  color: #c1c1c1;
+  margin-top: 4%;
+}

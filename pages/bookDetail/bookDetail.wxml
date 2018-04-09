@@ -1,0 +1,17 @@
+<view>
+    <image class='topImg' src="{{bookDetail.images.large}}" mode='widthFix'></image>
+    <view class='center'>
+        <image class='smallImg' src="{{bookDetail.images.small}}"></image>
+        <text class='public'>发表于</text>
+        <text class='time'>{{bookDetail.pubdate}}</text>
+    </view>
+    <view class='title'>
+        <text>{{bookDetail.title}}</text>
+    </view>
+    <view class='shareView' catchtap='shareFunc'>
+        <image wx:if="{{imageUrl}}" class='shareImg' src='{{imageUrl}}share.png'></image>
+    </view>
+    <view class='content'> 
+        <text>{{bookDetail.summary}}</text>
+    </view>
+</view>

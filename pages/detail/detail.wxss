@@ -1,0 +1,75 @@
+@import "star/star.wxss";
+.topImage{
+  width: 100%;
+}
+.bottomTop{
+  border-bottom: 25rpx solid #F8F8F8;
+  margin-bottom: 80rpx;
+}
+.wordHeadImg{
+  width:100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+.searchImg{
+  width: 40rpx;
+  height: 40rpx;
+}
+.txtSearch{
+  font-size: 30rpx;
+  padding: 1rpx 1rpx 1rpx 20rpx;
+  width: 70%;
+}
+.search{
+  display: flex;
+  background-color: #F2F2F2;
+  padding:8rpx 40rpx;
+}
+.searchBtn{
+  background-color:#1F4BA5;
+  color:white;
+  font-size:30rpx;
+  line-height:50rpx;
+  padding:9rpx 40rpx;
+
+}
+.noData{
+  text-align: center;
+}
+.personHead{
+  width: 220rpx;
+  height: 300rpx;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.fileDetail{
+  display: flex;
+  width:95%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fileDetailContent{
+  margin-right: 10rpx;
+  width: 220rpx;
+  margin-top:40rpx;
+}
+.fileName{
+  font-size: 28rpx;
+}
+.loading{
+  width: 50rpx;
+  height: 50rpx;
+}
+.load{
+  text-align: center;
+  font-size: 25rpx;
+  margin: 20rpx 0;
+}
+.loadWord{
+  position: relative;
+  bottom: 13rpx;
+  margin-left: 10rpx;
+}

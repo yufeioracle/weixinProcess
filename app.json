@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/fileDetail/fileDetail",
+    "pages/detail/detail",
+    "pages/main/main",
+    "pages/first/first",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/bookDetail/bookDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#1F4BA5",
+    "color": "#000000",
+    "backgroundColor": "#E5E5E5",
+    "list": [{
+      "text": "阅读",
+      "pagePath": "pages/index/index",
+      "iconPath": "image/read.png",
+      "selectedIconPath": "image/read2.png"
+    },
+    {
+      "pagePath": "pages/detail/detail",
+      "text": "电影",
+      "iconPath": "image/file.png",
+      "selectedIconPath": "image/file2.png"
+    },
+    {
+      "pagePath": "pages/login/login",
+      "text": "我的",
+      "iconPath": "image/myself2.png",
+      "selectedIconPath": "image/myself.png"
+    }
+    ]
+  }
+}

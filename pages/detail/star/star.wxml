@@ -1,0 +1,15 @@
+<template name='star'>
+  <view wx:if="{{fileData.score >= 9}}">
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <text class='fileName score'>{{fileData.score}}</text>
+  </view>
+  <view wx:elif="{{fileData.score >= 8}}">
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <image class='starImg' wx:if="{{fileData.image}}" src='{{fileData.image}}star.png'></image>
+    <text class='fileName score'>{{fileData.score}}</text>
+  </view>
+</template>

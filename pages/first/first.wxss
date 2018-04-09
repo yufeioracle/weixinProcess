@@ -1,0 +1,30 @@
+page{
+  background-color: #B3D4DB;
+}
+.avatarUrl{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.avatarUrlImg{
+  width:4rem;
+  height:4rem;
+  border-radius: 50%;
+}
+.nickName{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+.bottomTxt{
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.bottomTxtContent{
+  font-size: 0.8rem;
+  border:2px solid #405F80;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12rpx;
+}

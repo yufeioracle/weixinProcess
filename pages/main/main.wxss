@@ -1,0 +1,67 @@
+.topImage{
+  width: 100%;
+}
+.bottomTop{
+  border-bottom: 25rpx solid #F8F8F8;
+  margin-bottom: 80rpx;
+}
+.wordHeadImg{
+  width:100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+.cale{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.storyName{
+  margin-left: 40rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  font-weight: bold;
+}
+.storyTop{
+  display: flex;
+  align-items: center;
+}
+.storyContent{
+  color:#919191;
+  font-size: 30rpx;
+  margin-left: 25rpx;
+  margin-right:25rpx;
+}
+.time{
+  color:#919191;
+  font-size: 30rpx;
+}
+.storyNum{
+  color:#919191;
+  font-size: 25rpx;
+}
+.storyBottom{
+  display: flex;
+  align-items: center;
+  margin: 20rpx 0 20rpx 30rpx;
+}
+.story{
+  border-bottom:60rpx solid #F8F8F8;
+}
+.searchImg{
+  width: 40rpx;
+  height: 40rpx;
+}
+.txtSearch{
+  font-size: 30rpx;
+  padding: 1rpx 1rpx 1rpx 20rpx;
+  width: 80%;
+}
+.search{
+  display: flex;
+  background-color: #F2F2F2;
+  padding: 20rpx 40rpx;
+}
+.noData{
+  text-align: center;
+}

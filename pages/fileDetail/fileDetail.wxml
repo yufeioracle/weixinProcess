@@ -1,0 +1,53 @@
+<import src="../detail/star/star.wxml" />
+<view>
+  <view class='top'>
+    <image class='filmImg' src="{{filmData.image}}" mode='heightFix'></image>
+    <view class='head'>
+      <view class='title'>{{title}}</view>
+      <view class='country year'>
+        <text>{{filmData.attrs.country}}   ·  </text>
+        <text>{{filmData.attrs.year}}</text>
+      </view>
+      <view>
+        <text class='loveNum'>{{filmData.rating.numRaters}}     </text>
+        <text class='yearNext'>                   人喜欢</text>
+      </view>
+      <image class='rightImg' src="{{filmData.image}}"></image>
+    </view>
+  </view>
+  <view class='center'>
+    <view class='centerTitle'>{{centerTitle}}</view>
+    <view class='scoreCenter typeView'>
+      <view class='type caletion'>评分</view>
+      <template is="star" data="{{fileData}}"></template>
+    </view>
+    <view class='typeView'>
+      <text class='type' decode="{{true}}">导演&nbsp;&nbsp;&nbsp;</text>
+      <text class='typeData'>{{filmData.attrs.director}}</text>
+    </view>
+    <view class='typeView'>
+      <text class='type'>影人</text>
+      <view class='direction'>
+        <view>
+            <text class='typeData'>{{filmData.attrs.cast[0]}}</text>
+        </view>
+        <view>
+            <text class='typeData'>{{filmData.attrs.cast[1]}}</text>
+        </view>
+        <view>
+            <text class='typeData'>{{filmData.attrs.cast[2]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='typeView'>
+        <text class='type' decode="{{true}}">类型&nbsp;&nbsp;&nbsp;</text>
+        <text class='typeData' wx:for="movie_type" wx:for-index="index">{{movie_type[index]}}</text>
+    </view>
+  </view>
+  <view class='center'>
+      <view class='type'>剧情简介</view>
+      <view class='summary'>
+          <text>{{filmData.summary}}</text>
+      </view>
+  </view>
+</view>

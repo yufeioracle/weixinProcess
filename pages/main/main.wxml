@@ -1,0 +1,30 @@
+<view class='top'>
+  <view class='search'>
+    <image wx:if="{{imageUrl}}" class='searchImg' src='{{imageUrl}}search.png'></image>
+    <input class='txtSearch' type='text' placeholder='请输入书名' bindinput="txtData" value="{{txtData}}"></input>
+    <view wx:if="{{txtData}}" catchtap='clearSearch'>
+      <image wx:if="{{imageUrl}}" class='searchImg' src='{{imageUrl}}error.png'></image>
+    </view>
+  </view>
+  <image wx:if="{{imageUrl}}" class='topImage bottomTop' src='{{imageUrl}}vr.png' mode='widthFix'></image>
+  <view wx:if="{{hasData}}">
+    <view class='story' wx:for="{{bookesArr}}" wx:for-index="index" wx:for-item="bookesArr" data-index="{{bookesArr.id}}" catchtap='toDetail'>
+      <view>
+        <view class='storyTop'>
+          <image wx:if="{{imageUrl}}" class='wordHeadImg' src='{{imageUrl}}1.png'></image>
+          <text class='time'>{{bookesArr.author}}</text>
+        </view>
+        <view class='storyName'>{{bookesArr.title}}</view>
+        <image wx:if="{{imageUrl}}" class='topImage' src='{{bookesArr.images.large}}' mode='widthFix'></image>
+        <view class='storyContent'>
+          <text>{{bookesArr.summary}}</text>
+        </view>
+        <view class='storyBottom'>
+          <image wx:if="{{imageUrl}}" class='cale' src='{{imageUrl}}cale.png'></image>
+          <text class='storyNum'>{{bookesArr.rating.numRaters}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:elif="{{!hasData}}" class='noData'>没有加载到数据，输入一下吧</view>
+</view>

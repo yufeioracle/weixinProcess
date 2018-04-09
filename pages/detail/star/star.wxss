@@ -1,0 +1,15 @@
+.star{
+  background-color: #FFCC3E;
+}
+.starImg{
+  width: 24rpx;
+  height: 24rpx;
+}
+.score{
+  position: relative;
+  bottom: 5rpx;
+  margin-left: 10rpx;
+}
+.fileName{
+  font-size: 28rpx;
+}

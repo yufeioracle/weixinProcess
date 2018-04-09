@@ -1,0 +1,11 @@
+<view>
+    <view class='avatarUrl'>
+        <image class='avatarUrlImg' src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='nickName'>
+        <text>Hello，{{userInfo.nickName}}</text>
+    </view>
+    <view class='bottomTxt'>
+        <text class='bottomTxtContent' bindtap='enter'>开启小程序之旅</text>
+    </view>
+</view>

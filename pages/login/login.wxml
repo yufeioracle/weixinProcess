@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<import src="post-template/post-item-template.wxml"/>
+<view class="container">
+  <view class='img'>
+    <image class='headImg' src=''></image>
+  </view>
+  <view class="title">
+    <view class="top regist">登录</view>
+    <view class="top login" bindtap='toDetail'></view>
+  </view>
+  <view class='telephone'>
+    <view class='area'>+86</view>
+    <view class='tlephoneTxt'>
+      <input id='txtTel' type='text' placeholder='请输入您的账号' bindinput='userName'></input>
+    </view>
+  </view>
+  <view class='code'>
+    <view class='codeTxt'>
+      <input id='txtCode' type='text' placeholder='请输入收到的验证码'></input>
+    </view>
+    <view class='getCode'>获取验证码</view>
+  </view>
+  <view class='registBtn'>
+    <view class='registBtnContent' bindtap='registBtn'>登陆</view>
+  </view>
+  <view>
+    <view class='tips'>注册豆瓣网代表你同意《豆瓣用户协议》</view>
+  </view>
+</view>

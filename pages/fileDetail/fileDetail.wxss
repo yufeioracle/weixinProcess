@@ -1,0 +1,72 @@
+@import "../detail/star/star.wxss";
+.filmImg{
+  width: 100%;
+  height: 480rpx;
+  opacity: 0.05;
+  box-shadow:0 0 20px 0 red;
+}
+.top{
+  position: relative;
+}
+.head{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 130rpx 0 0 40rpx;
+}
+.title .country{
+  color: #405F80;
+  font-weight: bold;
+}
+.year{
+  margin: 130rpx 0 30rpx 0;
+}
+.yearNext{
+  color: #625E5F;
+  font-size: 32rpx;
+}
+.rightImg{
+  width: 300rpx;
+  height: 380rpx;
+  position: relative;
+  bottom: 255rpx;
+  left: 380rpx;
+}
+.loveNum{
+  color: #D01743;
+}
+.scoreCenter{
+  display: flex;
+}
+.type{
+  color: #ADADAD;
+  font-size: 30rpx;
+}
+.center{
+  padding: 100rpx 0rpx 50rpx 40rpx;
+  border-bottom: 6rpx solid #D9D9D9;
+}
+.caletion{
+  margin: 10rpx 30rpx 0rpx 0rpx;
+}
+.typeData{
+  font-size: 25rpx;
+}
+.typeView{
+  margin-top: 10rpx;
+}
+.direction{
+  margin-left: 90rpx;
+  margin-top:-50rpx;
+}
+.summary{
+  font-size: 25rpx;
+  padding-right: 40rpx;
+  margin-top: 40rpx;
+  margin-bottom: 80rpx;
+  line-height: 55rpx;
+}
+.centerTitle{
+  font-weight: bold;
+  margin-bottom:60rpx;
+}

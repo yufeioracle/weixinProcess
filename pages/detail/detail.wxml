@@ -1,0 +1,33 @@
+<import src="star/star.wxml" />
+<view class='top'>
+  <view class='search'>
+    <image wx:if="{{image}}" class='searchImg' src='{{image}}search.png'></image>
+    <input class='txtSearch' type='text' placeholder='电影搜索' bindinput="txtData" value="{{txtData}}"></input>
+    <text class='searchBtn' catchtap='fileSearch'>搜索</text>
+    <view wx:if="{{txtData}}" catchtap='clearSearch'>
+      <image wx:if="{{image}}" class='searchImg' src='{{image}}error.png'></image>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" bindscrolltolower="bindDownLoad1" style="height:{{scrollHeight}}px;">
+    <view class='center'>
+      <view class='fileDetail'>
+        <view class='fileDetailContent' catchtap='toFilmDetailFunc' data-index="{{fileData.id}}" wx:for="{{fileData}}" wx:for-index="index" wx:for-item="fileData">
+          <image class='personHead' src='{{fileData.imageUrl}}'></image>
+          <view>
+            <text class='fileName'>{{fileData.filmName}}</text>
+          </view>
+          <view>
+            <template is="star" data="{{fileData}}"></template>
+          </view>
+        </view>
+        <view class='fileDetailContent'></view>
+        <view class='fileDetailContent'></view>
+        <view class='fileDetailContent'></view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='load' wx:if="{{!isHidden}}">
+    <image wx:if="{{image}}" class='loading' src='{{image}}loading.gif'></image>
+    <text class='loadWord'>正在加载更多内容</text>
+  </view>
+</view>
